@@ -34,6 +34,8 @@ Partial Class Form1
         lblAuthNum = New Label()
         cbClearingInOut = New ComboBox()
         Label1 = New Label()
+        lblReturnDate = New Label()
+        dtpReturnDate = New DateTimePicker()
         SuspendLayout()
         ' 
         ' txtForceNum
@@ -138,11 +140,29 @@ Partial Class Form1
         Label1.TabIndex = 11
         Label1.Text = "Clearing In/Out"
         ' 
+        ' lblReturnDate
+        ' 
+        lblReturnDate.AutoSize = True
+        lblReturnDate.Location = New Point(439, 132)
+        lblReturnDate.Name = "lblReturnDate"
+        lblReturnDate.Size = New Size(77, 15)
+        lblReturnDate.TabIndex = 12
+        lblReturnDate.Text = "Date(Return):"
+        ' 
+        ' dtpReturnDate
+        ' 
+        dtpReturnDate.Location = New Point(522, 124)
+        dtpReturnDate.Name = "dtpReturnDate"
+        dtpReturnDate.Size = New Size(200, 23)
+        dtpReturnDate.TabIndex = 14
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(dtpReturnDate)
+        Controls.Add(lblReturnDate)
         Controls.Add(Label1)
         Controls.Add(cbClearingInOut)
         Controls.Add(lblAuthNum)
@@ -173,4 +193,6 @@ Partial Class Form1
     Friend WithEvents lblAuthNum As Label
     Friend WithEvents cbClearingInOut As ComboBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents lblReturnDate As Label
+    Friend WithEvents dtpReturnDate As DateTimePicker
 End Class
