@@ -25,12 +25,20 @@ Partial Class Form1
         txtForceNum = New TextBox()
         lblForceNum = New Label()
         lblRank = New Label()
-        ComboBox1 = New ComboBox()
+        cbRank = New ComboBox()
+        lblName = New Label()
+        TextBox1 = New TextBox()
+        lblHomeUnit = New Label()
+        txtHomeUnit = New TextBox()
+        txtAuthNum = New TextBox()
+        lblAuthNum = New Label()
+        cbClearingInOut = New ComboBox()
+        Label1 = New Label()
         SuspendLayout()
         ' 
         ' txtForceNum
         ' 
-        txtForceNum.Location = New Point(146, 114)
+        txtForceNum.Location = New Point(146, 124)
         txtForceNum.Name = "txtForceNum"
         txtForceNum.Size = New Size(176, 23)
         txtForceNum.TabIndex = 0
@@ -38,7 +46,7 @@ Partial Class Form1
         ' lblForceNum
         ' 
         lblForceNum.AutoSize = True
-        lblForceNum.Location = New Point(54, 122)
+        lblForceNum.Location = New Point(51, 132)
         lblForceNum.Name = "lblForceNum"
         lblForceNum.Size = New Size(86, 15)
         lblForceNum.TabIndex = 1
@@ -47,27 +55,103 @@ Partial Class Form1
         ' lblRank
         ' 
         lblRank.AutoSize = True
-        lblRank.Location = New Point(54, 176)
+        lblRank.Location = New Point(51, 174)
         lblRank.Name = "lblRank"
         lblRank.Size = New Size(36, 15)
         lblRank.TabIndex = 2
         lblRank.Text = "Rank:"
         ' 
-        ' ComboBox1
+        ' cbRank
         ' 
-        ComboBox1.FormattingEnabled = True
-        ComboBox1.Items.AddRange(New Object() {"Pte", "L/Cpl ", "Cpl ", "Sgt ", "S/Sgt", "WO2", "WO1", "SWO", "MWO", "CWO", "SCWO", "MCWO", "Chaplain", "CO", "2Lt ", "Lt ", "Capt", "Maj", "Lt Col", "Col", "Brig Gen", "Maj Gen", "Lt Gen", "Gen"})
-        ComboBox1.Location = New Point(146, 177)
-        ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(176, 23)
-        ComboBox1.TabIndex = 3
+        cbRank.FormattingEnabled = True
+        cbRank.Items.AddRange(New Object() {"Pte", "L/Cpl ", "Cpl ", "Sgt ", "S/Sgt", "WO2", "WO1", "SWO", "MWO", "CWO", "SCWO", "MCWO", "Chaplain", "CO", "2Lt ", "Lt ", "Capt", "Maj", "Lt Col", "Col", "Brig Gen", "Maj Gen", "Lt Gen", "Gen"})
+        cbRank.Location = New Point(146, 166)
+        cbRank.Name = "cbRank"
+        cbRank.Size = New Size(176, 23)
+        cbRank.TabIndex = 3
+        cbRank.Text = "Select Rank"
+        ' 
+        ' lblName
+        ' 
+        lblName.AutoSize = True
+        lblName.Location = New Point(51, 216)
+        lblName.Name = "lblName"
+        lblName.Size = New Size(69, 15)
+        lblName.TabIndex = 4
+        lblName.Text = "Full Names:"
+        ' 
+        ' TextBox1
+        ' 
+        TextBox1.Location = New Point(146, 208)
+        TextBox1.Name = "TextBox1"
+        TextBox1.Size = New Size(176, 23)
+        TextBox1.TabIndex = 5
+        ' 
+        ' lblHomeUnit
+        ' 
+        lblHomeUnit.AutoSize = True
+        lblHomeUnit.Location = New Point(51, 258)
+        lblHomeUnit.Name = "lblHomeUnit"
+        lblHomeUnit.Size = New Size(73, 15)
+        lblHomeUnit.TabIndex = 6
+        lblHomeUnit.Text = "Unit(Home):"
+        ' 
+        ' txtHomeUnit
+        ' 
+        txtHomeUnit.Location = New Point(146, 250)
+        txtHomeUnit.Name = "txtHomeUnit"
+        txtHomeUnit.Size = New Size(176, 23)
+        txtHomeUnit.TabIndex = 7
+        ' 
+        ' txtAuthNum
+        ' 
+        txtAuthNum.Location = New Point(146, 334)
+        txtAuthNum.Name = "txtAuthNum"
+        txtAuthNum.Size = New Size(176, 23)
+        txtAuthNum.TabIndex = 8
+        ' 
+        ' lblAuthNum
+        ' 
+        lblAuthNum.AutoSize = True
+        lblAuthNum.Location = New Point(51, 342)
+        lblAuthNum.Name = "lblAuthNum"
+        lblAuthNum.Size = New Size(79, 15)
+        lblAuthNum.TabIndex = 9
+        lblAuthNum.Text = "Authority No:"
+        ' 
+        ' cbClearingInOut
+        ' 
+        cbClearingInOut.FormattingEnabled = True
+        cbClearingInOut.Items.AddRange(New Object() {"Out", "In"})
+        cbClearingInOut.Location = New Point(146, 292)
+        cbClearingInOut.Name = "cbClearingInOut"
+        cbClearingInOut.Size = New Size(176, 23)
+        cbClearingInOut.TabIndex = 10
+        cbClearingInOut.Text = "Select (In/Out)"
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(51, 300)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(89, 15)
+        Label1.TabIndex = 11
+        Label1.Text = "Clearing In/Out"
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
-        Controls.Add(ComboBox1)
+        Controls.Add(Label1)
+        Controls.Add(cbClearingInOut)
+        Controls.Add(lblAuthNum)
+        Controls.Add(txtAuthNum)
+        Controls.Add(txtHomeUnit)
+        Controls.Add(lblHomeUnit)
+        Controls.Add(TextBox1)
+        Controls.Add(lblName)
+        Controls.Add(cbRank)
         Controls.Add(lblRank)
         Controls.Add(lblForceNum)
         Controls.Add(txtForceNum)
@@ -80,5 +164,13 @@ Partial Class Form1
     Friend WithEvents txtForceNum As TextBox
     Friend WithEvents lblForceNum As Label
     Friend WithEvents lblRank As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cbRank As ComboBox
+    Friend WithEvents lblName As Label
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents lblHomeUnit As Label
+    Friend WithEvents txtHomeUnit As TextBox
+    Friend WithEvents txtAuthNum As TextBox
+    Friend WithEvents lblAuthNum As Label
+    Friend WithEvents cbClearingInOut As ComboBox
+    Friend WithEvents Label1 As Label
 End Class
