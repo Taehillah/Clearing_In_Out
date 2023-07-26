@@ -26,14 +26,14 @@ Partial Class Form1
         txtForceNum = New TextBox()
         lblForceNum = New Label()
         lblRank = New Label()
-        cbRank = New ComboBox()
+        cmbRank = New ComboBox()
         lblName = New Label()
         TextBox1 = New TextBox()
         lblHomeUnit = New Label()
         txtHomeUnit = New TextBox()
         txtAuthNum = New TextBox()
         lblAuthNum = New Label()
-        cbClearingInOut = New ComboBox()
+        cmbClearingInOut = New ComboBox()
         Label1 = New Label()
         lblReturnDate = New Label()
         dtpReturnDate = New DateTimePicker()
@@ -41,6 +41,8 @@ Partial Class Form1
         txtUnitVisiting = New TextBox()
         lblUnitVisiting = New Label()
         btnSubmit = New Button()
+        lblBrigadeName1 = New Label()
+        lblBrigadeName = New Label()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -69,15 +71,15 @@ Partial Class Form1
         lblRank.TabIndex = 2
         lblRank.Text = "Rank:"
         ' 
-        ' cbRank
+        ' cmbRank
         ' 
-        cbRank.FormattingEnabled = True
-        cbRank.Items.AddRange(New Object() {"Pte", "L/Cpl ", "Cpl ", "Sgt ", "S/Sgt", "WO2", "WO1", "SWO", "MWO", "CWO", "SCWO", "MCWO", "Chaplain", "CO", "2Lt ", "Lt ", "Capt", "Maj", "Lt Col", "Col", "Brig Gen", "Maj Gen", "Lt Gen", "Gen"})
-        cbRank.Location = New Point(148, 191)
-        cbRank.Name = "cbRank"
-        cbRank.Size = New Size(176, 23)
-        cbRank.TabIndex = 3
-        cbRank.Text = "Select Rank"
+        cmbRank.FormattingEnabled = True
+        cmbRank.Items.AddRange(New Object() {"Pte", "L/Cpl ", "Cpl ", "Sgt ", "S/Sgt", "WO2", "WO1", "SWO", "MWO", "CWO", "SCWO", "MCWO", "Chaplain", "CO", "2Lt ", "Lt ", "Capt", "Maj", "Lt Col", "Col", "Brig Gen", "Maj Gen", "Lt Gen", "Gen"})
+        cmbRank.Location = New Point(148, 191)
+        cmbRank.Name = "cmbRank"
+        cmbRank.Size = New Size(176, 23)
+        cmbRank.TabIndex = 3
+        cmbRank.Text = "Select Rank"
         ' 
         ' lblName
         ' 
@@ -127,15 +129,15 @@ Partial Class Form1
         lblAuthNum.TabIndex = 9
         lblAuthNum.Text = "Authority No:"
         ' 
-        ' cbClearingInOut
+        ' cmbClearingInOut
         ' 
-        cbClearingInOut.FormattingEnabled = True
-        cbClearingInOut.Items.AddRange(New Object() {"Out", "In"})
-        cbClearingInOut.Location = New Point(531, 149)
-        cbClearingInOut.Name = "cbClearingInOut"
-        cbClearingInOut.Size = New Size(176, 23)
-        cbClearingInOut.TabIndex = 10
-        cbClearingInOut.Text = "Select (In/Out)"
+        cmbClearingInOut.FormattingEnabled = True
+        cmbClearingInOut.Items.AddRange(New Object() {"Out", "In"})
+        cmbClearingInOut.Location = New Point(531, 149)
+        cmbClearingInOut.Name = "cmbClearingInOut"
+        cmbClearingInOut.Size = New Size(176, 23)
+        cmbClearingInOut.TabIndex = 10
+        cmbClearingInOut.Text = "Select (In/Out)"
         ' 
         ' Label1
         ' 
@@ -198,11 +200,33 @@ Partial Class Form1
         btnSubmit.Text = "Submit"
         btnSubmit.UseVisualStyleBackColor = True
         ' 
+        ' lblBrigadeName1
+        ' 
+        lblBrigadeName1.AutoSize = True
+        lblBrigadeName1.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
+        lblBrigadeName1.Location = New Point(260, 60)
+        lblBrigadeName1.Name = "lblBrigadeName1"
+        lblBrigadeName1.Size = New Size(80, 21)
+        lblBrigadeName1.TabIndex = 19
+        lblBrigadeName1.Text = "HQ 46 SA"
+        ' 
+        ' lblBrigadeName
+        ' 
+        lblBrigadeName.AutoSize = True
+        lblBrigadeName.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
+        lblBrigadeName.Location = New Point(426, 60)
+        lblBrigadeName.Name = "lblBrigadeName"
+        lblBrigadeName.Size = New Size(78, 21)
+        lblBrigadeName.TabIndex = 20
+        lblBrigadeName.Text = "BRIGADE"
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(lblBrigadeName)
+        Controls.Add(lblBrigadeName1)
         Controls.Add(btnSubmit)
         Controls.Add(lblUnitVisiting)
         Controls.Add(txtUnitVisiting)
@@ -210,14 +234,14 @@ Partial Class Form1
         Controls.Add(dtpReturnDate)
         Controls.Add(lblReturnDate)
         Controls.Add(Label1)
-        Controls.Add(cbClearingInOut)
+        Controls.Add(cmbClearingInOut)
         Controls.Add(lblAuthNum)
         Controls.Add(txtAuthNum)
         Controls.Add(txtHomeUnit)
         Controls.Add(lblHomeUnit)
         Controls.Add(TextBox1)
         Controls.Add(lblName)
-        Controls.Add(cbRank)
+        Controls.Add(cmbRank)
         Controls.Add(lblRank)
         Controls.Add(lblForceNum)
         Controls.Add(txtForceNum)
@@ -231,14 +255,14 @@ Partial Class Form1
     Friend WithEvents txtForceNum As TextBox
     Friend WithEvents lblForceNum As Label
     Friend WithEvents lblRank As Label
-    Friend WithEvents cbRank As ComboBox
+    Friend WithEvents cmbRank As ComboBox
     Friend WithEvents lblName As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents lblHomeUnit As Label
     Friend WithEvents txtHomeUnit As TextBox
     Friend WithEvents txtAuthNum As TextBox
     Friend WithEvents lblAuthNum As Label
-    Friend WithEvents cbClearingInOut As ComboBox
+    Friend WithEvents cmbClearingInOut As ComboBox
     Friend WithEvents Label1 As Label
     Friend WithEvents lblReturnDate As Label
     Friend WithEvents dtpReturnDate As DateTimePicker
@@ -246,4 +270,6 @@ Partial Class Form1
     Friend WithEvents txtUnitVisiting As TextBox
     Friend WithEvents lblUnitVisiting As Label
     Friend WithEvents btnSubmit As Button
+    Friend WithEvents lblBrigadeName1 As Label
+    Friend WithEvents lblBrigadeName As Label
 End Class
