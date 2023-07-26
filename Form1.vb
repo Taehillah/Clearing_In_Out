@@ -1,5 +1,7 @@
 ﻿Public Class Form1
-    Private Sub cbClearingInOut_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbClearingInOut.SelectedIndexChanged
+
+    Private Sub cmbClearingInOut_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbClearingInOut.SelectedIndexChanged
+
         Dim selectedOption As String = cmbClearingInOut.SelectedItem.ToString()
 
         Select Case selectedOption
