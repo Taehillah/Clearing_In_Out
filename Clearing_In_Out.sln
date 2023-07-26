@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Clearing_In_Out", "Clearing_In_Out.vbproj", "{70811658-052D-4352-BAE6-DDF16AED983B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70811658-052D-4352-BAE6-DDF16AED983B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70811658-052D-4352-BAE6-DDF16AED983B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70811658-052D-4352-BAE6-DDF16AED983B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70811658-052D-4352-BAE6-DDF16AED983B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {52807777-12FD-4D60-BFC9-A12EA49D41BB}
+	EndGlobalSection
+EndGlobal
