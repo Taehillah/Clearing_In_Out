@@ -24,6 +24,9 @@ Public Class Form1
 
     Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
 
+        Dim strForceNum As String = txtForceNum.Text
+        Dim Name As String = txt
+
     End Sub
 End Class
 

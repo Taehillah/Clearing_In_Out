@@ -28,7 +28,7 @@ Partial Class Form1
         lblRank = New Label()
         cmbRank = New ComboBox()
         lblName = New Label()
-        TextBox1 = New TextBox()
+        txtName = New TextBox()
         lblHomeUnit = New Label()
         txtHomeUnit = New TextBox()
         txtAuthNum = New TextBox()
@@ -92,12 +92,12 @@ Partial Class Form1
         lblName.TabIndex = 4
         lblName.Text = "Full Names:"
         ' 
-        ' TextBox1
+        ' txtName
         ' 
-        TextBox1.Location = New Point(141, 260)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(176, 23)
-        TextBox1.TabIndex = 5
+        txtName.Location = New Point(141, 260)
+        txtName.Name = "txtName"
+        txtName.Size = New Size(176, 23)
+        txtName.TabIndex = 5
         ' 
         ' lblHomeUnit
         ' 
@@ -252,7 +252,7 @@ Partial Class Form1
         Controls.Add(txtAuthNum)
         Controls.Add(txtHomeUnit)
         Controls.Add(lblHomeUnit)
-        Controls.Add(TextBox1)
+        Controls.Add(txtName)
         Controls.Add(lblName)
         Controls.Add(cmbRank)
         Controls.Add(lblRank)
@@ -273,7 +273,7 @@ Partial Class Form1
     Friend WithEvents lblRank As Label
     Friend WithEvents cmbRank As ComboBox
     Friend WithEvents lblName As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtName As TextBox
     Friend WithEvents lblHomeUnit As Label
     Friend WithEvents txtHomeUnit As TextBox
     Friend WithEvents txtAuthNum As TextBox
