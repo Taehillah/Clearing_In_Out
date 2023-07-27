@@ -33,7 +33,11 @@ Public Class Form1
         Dim strDateTime As String = dtpReturnDate.Text.Trim() 'object if problem
         Dim strUnitVisiting As String = txtUnitVisiting.Text.Trim()
 
-        Dim filepath As String = "C:\Users\Public\Desktop"
+        ' Dim filepath As String = "C:\Users\Public\Desktop"
+        Dim documentsFolder As String = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)
+        Dim filePath As String = Path.Combine(documentsFolder, "data.txt")
+
+
 
         Try
                 ' Create or append to the text file and write the data
