@@ -158,6 +158,7 @@ Partial Class Form1
         ' 
         ' dtpReturnDate
         ' 
+        dtpReturnDate.AllowDrop = True
         dtpReturnDate.Format = DateTimePickerFormat.Short
         dtpReturnDate.Location = New Point(524, 262)
         dtpReturnDate.Name = "dtpReturnDate"

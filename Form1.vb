@@ -16,8 +16,10 @@
         ' Disable txtUnitVisiting if the selected option is "In"; otherwise, enable it.
         If selectedOption = "In" Then
             txtUnitVisiting.Enabled = False
+            dtpReturnDate.Enabled = False
         Else
             txtUnitVisiting.Enabled = True
+            dtpReturnDate.Enabled = True
         End If
     End Sub
 End Class
