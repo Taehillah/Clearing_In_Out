@@ -132,7 +132,6 @@ Partial Class Form1
         ' cmbClearingInOut
         ' 
         cmbClearingInOut.FormattingEnabled = True
-        cmbClearingInOut.Items.AddRange(New Object() {"Out", "In"})
         cmbClearingInOut.Location = New Point(524, 176)
         cmbClearingInOut.Name = "cmbClearingInOut"
         cmbClearingInOut.Size = New Size(176, 23)
