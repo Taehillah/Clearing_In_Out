@@ -35,6 +35,33 @@ Public Class Form1
 
         Dim filepath As String = "C:\Users\Public\Desktop"
 
+        Try
+                ' Create or append to the text file and write the data
+                Using writer As New StreamWriter(filePath, True)
+                writer.WriteLine("Force Number: " & strForceNum)
+                writer.WriteLine("Name: " & strName)
+                writer.WriteLine("Rank: " & strRank)
+                writer.WriteLine("Home Unit: " & strHomeUnit)
+                writer.WriteLine("Clearing: " & strClearingInOut)
+                writer.WriteLine("Authority Number: " & strAuthorityNum)
+                writer.WriteLine("Date: " & strDateTime)
+                writer.WriteLine("Unit (Visiting): " & strUnitVisiting)
+                writer.WriteLine("----------") ' Separating line between entries
+                End Using
+
+                ' Display a success message to the user
+                MessageBox.Show("Data has been exported to " & filePath)
+
+                ' Clear the input fields after exporting the data
+                txtName.Text = ""
+                txtAge.Text = ""
+                txtEmail.Text = ""
+
+            Catch ex As Exception
+                ' Handle any exceptions that may occur during writing to the file
+                MessageBox.Show("Error exporting data: " & ex.Message)
+            End Try
+
     End Sub
 End Class
 
