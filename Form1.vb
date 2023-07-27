@@ -26,12 +26,15 @@ Public Class Form1
 
         Dim strForceNum As String = txtForceNum.Text.Trim()
         Dim strName As String = txtName.Text.Trim()
-        Dim strRank As String = cmbRank.SelectedValue 'if problems the type Object then toString()
+        Dim strRank As String = cmbRank.SelectedItem 'if problems the type Object then toString()
         Dim strHomeUnit As String = txtHomeUnit.Text.Trim()
-        Dim strClearingInOut As String = cmbClearingInOut.SelectedValue
+        Dim strClearingInOut As Object = cmbClearingInOut.SelectedValue
         Dim strAuthorityNum As String = txtAuthNum.Text.Trim()
         Dim strDateTime As String = dtpReturnDate.Text.Trim() 'object if problem
         Dim strUnitVisiting As String = txtUnitVisiting.Text.Trim()
+
+        ' Dim strRankString As String = strRank.ToString()
+        '  Dim strClearingInOutString As String = strClearingInOut.ToString()
 
         ' Dim filepath As String = "C:\Users\Public\Desktop"
         Dim documentsFolder As String = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)
