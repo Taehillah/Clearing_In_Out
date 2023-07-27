@@ -28,6 +28,8 @@ Public Class Form1
         Dim strName As String = txtName.Text
         Dim strRank As String = cmbRank.SelectedValue 'if problems the type Object then toString()
         Dim strHomeUnit As String = txtHomeUnit.Text
+        Dim strClearingInOut As String = cmbClearingInOut.SelectedValue
+        Dim strAuthorityNum As String = txtAuthNum.Text
         Dim 
 
     End Sub
