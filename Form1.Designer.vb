@@ -42,13 +42,13 @@ Partial Class Form1
         lblUnitVisiting = New Label()
         btnSubmit = New Button()
         lblBrigadeName1 = New Label()
-        lblBrigadeName = New Label()
+        Label2 = New Label()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' txtForceNum
         ' 
-        txtForceNum.Location = New Point(148, 149)
+        txtForceNum.Location = New Point(141, 176)
         txtForceNum.Name = "txtForceNum"
         txtForceNum.Size = New Size(176, 23)
         txtForceNum.TabIndex = 0
@@ -56,7 +56,7 @@ Partial Class Form1
         ' lblForceNum
         ' 
         lblForceNum.AutoSize = True
-        lblForceNum.Location = New Point(53, 157)
+        lblForceNum.Location = New Point(46, 184)
         lblForceNum.Name = "lblForceNum"
         lblForceNum.Size = New Size(86, 15)
         lblForceNum.TabIndex = 1
@@ -65,7 +65,7 @@ Partial Class Form1
         ' lblRank
         ' 
         lblRank.AutoSize = True
-        lblRank.Location = New Point(53, 199)
+        lblRank.Location = New Point(46, 226)
         lblRank.Name = "lblRank"
         lblRank.Size = New Size(36, 15)
         lblRank.TabIndex = 2
@@ -75,7 +75,7 @@ Partial Class Form1
         ' 
         cmbRank.FormattingEnabled = True
         cmbRank.Items.AddRange(New Object() {"Pte", "L/Cpl ", "Cpl ", "Sgt ", "S/Sgt", "WO2", "WO1", "SWO", "MWO", "CWO", "SCWO", "MCWO", "Chaplain", "CO", "2Lt ", "Lt ", "Capt", "Maj", "Lt Col", "Col", "Brig Gen", "Maj Gen", "Lt Gen", "Gen"})
-        cmbRank.Location = New Point(148, 191)
+        cmbRank.Location = New Point(141, 218)
         cmbRank.Name = "cmbRank"
         cmbRank.Size = New Size(176, 23)
         cmbRank.TabIndex = 3
@@ -84,7 +84,7 @@ Partial Class Form1
         ' lblName
         ' 
         lblName.AutoSize = True
-        lblName.Location = New Point(53, 241)
+        lblName.Location = New Point(46, 268)
         lblName.Name = "lblName"
         lblName.Size = New Size(69, 15)
         lblName.TabIndex = 4
@@ -92,7 +92,7 @@ Partial Class Form1
         ' 
         ' TextBox1
         ' 
-        TextBox1.Location = New Point(148, 233)
+        TextBox1.Location = New Point(141, 260)
         TextBox1.Name = "TextBox1"
         TextBox1.Size = New Size(176, 23)
         TextBox1.TabIndex = 5
@@ -100,7 +100,7 @@ Partial Class Form1
         ' lblHomeUnit
         ' 
         lblHomeUnit.AutoSize = True
-        lblHomeUnit.Location = New Point(53, 283)
+        lblHomeUnit.Location = New Point(46, 310)
         lblHomeUnit.Name = "lblHomeUnit"
         lblHomeUnit.Size = New Size(73, 15)
         lblHomeUnit.TabIndex = 6
@@ -108,14 +108,14 @@ Partial Class Form1
         ' 
         ' txtHomeUnit
         ' 
-        txtHomeUnit.Location = New Point(148, 275)
+        txtHomeUnit.Location = New Point(141, 302)
         txtHomeUnit.Name = "txtHomeUnit"
         txtHomeUnit.Size = New Size(176, 23)
         txtHomeUnit.TabIndex = 7
         ' 
         ' txtAuthNum
         ' 
-        txtAuthNum.Location = New Point(531, 191)
+        txtAuthNum.Location = New Point(524, 218)
         txtAuthNum.Name = "txtAuthNum"
         txtAuthNum.Size = New Size(176, 23)
         txtAuthNum.TabIndex = 8
@@ -123,7 +123,7 @@ Partial Class Form1
         ' lblAuthNum
         ' 
         lblAuthNum.AutoSize = True
-        lblAuthNum.Location = New Point(436, 199)
+        lblAuthNum.Location = New Point(429, 226)
         lblAuthNum.Name = "lblAuthNum"
         lblAuthNum.Size = New Size(79, 15)
         lblAuthNum.TabIndex = 9
@@ -133,7 +133,7 @@ Partial Class Form1
         ' 
         cmbClearingInOut.FormattingEnabled = True
         cmbClearingInOut.Items.AddRange(New Object() {"Out", "In"})
-        cmbClearingInOut.Location = New Point(531, 149)
+        cmbClearingInOut.Location = New Point(524, 176)
         cmbClearingInOut.Name = "cmbClearingInOut"
         cmbClearingInOut.Size = New Size(176, 23)
         cmbClearingInOut.TabIndex = 10
@@ -142,7 +142,7 @@ Partial Class Form1
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(436, 157)
+        Label1.Location = New Point(429, 184)
         Label1.Name = "Label1"
         Label1.Size = New Size(92, 15)
         Label1.TabIndex = 11
@@ -151,7 +151,7 @@ Partial Class Form1
         ' lblReturnDate
         ' 
         lblReturnDate.AutoSize = True
-        lblReturnDate.Location = New Point(436, 241)
+        lblReturnDate.Location = New Point(429, 268)
         lblReturnDate.Name = "lblReturnDate"
         lblReturnDate.Size = New Size(77, 15)
         lblReturnDate.TabIndex = 12
@@ -160,7 +160,7 @@ Partial Class Form1
         ' dtpReturnDate
         ' 
         dtpReturnDate.Format = DateTimePickerFormat.Short
-        dtpReturnDate.Location = New Point(531, 235)
+        dtpReturnDate.Location = New Point(524, 262)
         dtpReturnDate.Name = "dtpReturnDate"
         dtpReturnDate.Size = New Size(176, 23)
         dtpReturnDate.TabIndex = 14
@@ -168,7 +168,7 @@ Partial Class Form1
         ' PictureBox1
         ' 
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(346, 36)
+        PictureBox1.Location = New Point(351, 44)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(74, 69)
         PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
@@ -177,7 +177,7 @@ Partial Class Form1
         ' 
         ' txtUnitVisiting
         ' 
-        txtUnitVisiting.Location = New Point(531, 275)
+        txtUnitVisiting.Location = New Point(524, 302)
         txtUnitVisiting.Name = "txtUnitVisiting"
         txtUnitVisiting.Size = New Size(176, 23)
         txtUnitVisiting.TabIndex = 16
@@ -185,7 +185,7 @@ Partial Class Form1
         ' lblUnitVisiting
         ' 
         lblUnitVisiting.AutoSize = True
-        lblUnitVisiting.Location = New Point(436, 283)
+        lblUnitVisiting.Location = New Point(429, 310)
         lblUnitVisiting.Name = "lblUnitVisiting"
         lblUnitVisiting.Size = New Size(79, 15)
         lblUnitVisiting.TabIndex = 17
@@ -193,7 +193,7 @@ Partial Class Form1
         ' 
         ' btnSubmit
         ' 
-        btnSubmit.Location = New Point(346, 350)
+        btnSubmit.Location = New Point(339, 377)
         btnSubmit.Name = "btnSubmit"
         btnSubmit.Size = New Size(112, 26)
         btnSubmit.TabIndex = 18
@@ -203,29 +203,29 @@ Partial Class Form1
         ' lblBrigadeName1
         ' 
         lblBrigadeName1.AutoSize = True
-        lblBrigadeName1.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
-        lblBrigadeName1.Location = New Point(260, 60)
+        lblBrigadeName1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        lblBrigadeName1.Location = New Point(306, 20)
         lblBrigadeName1.Name = "lblBrigadeName1"
-        lblBrigadeName1.Size = New Size(80, 21)
+        lblBrigadeName1.Size = New Size(152, 21)
         lblBrigadeName1.TabIndex = 19
-        lblBrigadeName1.Text = "HQ 46 SA"
+        lblBrigadeName1.Text = "HQ 46 SA BRIGADE"
         ' 
-        ' lblBrigadeName
+        ' Label2
         ' 
-        lblBrigadeName.AutoSize = True
-        lblBrigadeName.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
-        lblBrigadeName.Location = New Point(426, 60)
-        lblBrigadeName.Name = "lblBrigadeName"
-        lblBrigadeName.Size = New Size(78, 21)
-        lblBrigadeName.TabIndex = 20
-        lblBrigadeName.Text = "BRIGADE"
+        Label2.AutoSize = True
+        Label2.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label2.Location = New Point(314, 125)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(144, 17)
+        Label2.TabIndex = 20
+        Label2.Text = "Clearing In | Out Form"
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
-        Controls.Add(lblBrigadeName)
+        Controls.Add(Label2)
         Controls.Add(lblBrigadeName1)
         Controls.Add(btnSubmit)
         Controls.Add(lblUnitVisiting)
@@ -271,5 +271,5 @@ Partial Class Form1
     Friend WithEvents lblUnitVisiting As Label
     Friend WithEvents btnSubmit As Button
     Friend WithEvents lblBrigadeName1 As Label
-    Friend WithEvents lblBrigadeName As Label
+    Friend WithEvents Label2 As Label
 End Class
