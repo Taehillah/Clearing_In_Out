@@ -21,5 +21,9 @@ Public Class Form1
             dtpReturnDate.Enabled = True
         End If
     End Sub
+
+    Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
+
+    End Sub
 End Class
 
