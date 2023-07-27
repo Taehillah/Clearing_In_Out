@@ -52,12 +52,16 @@ Public Class Form1
                 ' Display a success message to the user
                 MessageBox.Show("Data has been exported to " & filePath)
 
-                ' Clear the input fields after exporting the data
-                txtName.Text = ""
-                txtAge.Text = ""
-                txtEmail.Text = ""
+            ' Clear the input fields after exporting the data
+            txtForceNum.Text = ""
+            txtName.Text = ""
+            cmbRank.SelectedValue = ""
+            txtHomeUnit.Text = ""
+            cmbClearingInOut.SelectedValue = ""
 
-            Catch ex As Exception
+
+
+        Catch ex As Exception
                 ' Handle any exceptions that may occur during writing to the file
                 MessageBox.Show("Error exporting data: " & ex.Message)
             End Try
