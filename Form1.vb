@@ -25,7 +25,10 @@ Public Class Form1
     Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
 
         Dim strForceNum As String = txtForceNum.Text
-        Dim Name As String = txt
+        Dim strName As String = txtName.Text
+        Dim strRank As String = cmbRank.SelectedValue 'if problems the type Object then toString()
+        Dim strHomeUnit As String = txtHomeUnit.Text
+        Dim 
 
     End Sub
 End Class
