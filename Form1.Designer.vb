@@ -43,7 +43,9 @@ Partial Class Form1
         btnSubmit = New Button()
         lblBrigadeName1 = New Label()
         Label2 = New Label()
+        FileSystemWatcher1 = New IO.FileSystemWatcher()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(FileSystemWatcher1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' txtForceNum
@@ -226,6 +228,11 @@ Partial Class Form1
         Label2.Text = "Clearing In | Out Form"
         Label2.TextAlign = ContentAlignment.TopCenter
         ' 
+        ' FileSystemWatcher1
+        ' 
+        FileSystemWatcher1.EnableRaisingEvents = True
+        FileSystemWatcher1.SynchronizingObject = Me
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -256,6 +263,7 @@ Partial Class Form1
         Text = "Clearing In Out"
         TransparencyKey = SystemColors.ControlDark
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        CType(FileSystemWatcher1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -280,4 +288,5 @@ Partial Class Form1
     Friend WithEvents btnSubmit As Button
     Friend WithEvents lblBrigadeName1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents FileSystemWatcher1 As IO.FileSystemWatcher
 End Class
