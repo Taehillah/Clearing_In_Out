@@ -5,8 +5,6 @@
         cmbClearingInOut.Items.Add("In")
         cmbClearingInOut.Items.Add("Out")
 
-        ' Set the default selected index to 0 (In)
-        cmbClearingInOut.SelectedIndex = 0
     End Sub
 
     Private Sub cmbClearingInOut_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbClearingInOut.SelectedIndexChanged
