@@ -58,8 +58,9 @@ Public Class Form1
             cmbRank.SelectedValue = ""
             txtHomeUnit.Text = ""
             cmbClearingInOut.SelectedValue = ""
-
-
+            txtAuthNum.Text = ""
+            dtpReturnDate.Text = ""
+            txtUnitVisiting.Text = ""
 
         Catch ex As Exception
                 ' Handle any exceptions that may occur during writing to the file
