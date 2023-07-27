@@ -167,6 +167,7 @@ Partial Class Form1
         ' 
         ' PictureBox1
         ' 
+        PictureBox1.Anchor = AnchorStyles.Top
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
         PictureBox1.Location = New Point(351, 44)
         PictureBox1.Name = "PictureBox1"
@@ -202,6 +203,7 @@ Partial Class Form1
         ' 
         ' lblBrigadeName1
         ' 
+        lblBrigadeName1.Anchor = AnchorStyles.Top
         lblBrigadeName1.AutoSize = True
         lblBrigadeName1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
         lblBrigadeName1.Location = New Point(306, 20)
@@ -209,9 +211,11 @@ Partial Class Form1
         lblBrigadeName1.Size = New Size(152, 21)
         lblBrigadeName1.TabIndex = 19
         lblBrigadeName1.Text = "HQ 46 SA BRIGADE"
+        lblBrigadeName1.TextAlign = ContentAlignment.TopCenter
         ' 
         ' Label2
         ' 
+        Label2.Anchor = AnchorStyles.Top
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
         Label2.Location = New Point(314, 125)
@@ -219,6 +223,7 @@ Partial Class Form1
         Label2.Size = New Size(144, 17)
         Label2.TabIndex = 20
         Label2.Text = "Clearing In | Out Form"
+        Label2.TextAlign = ContentAlignment.TopCenter
         ' 
         ' Form1
         ' 
