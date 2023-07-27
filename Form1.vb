@@ -30,8 +30,10 @@ Public Class Form1
         Dim strHomeUnit As String = txtHomeUnit.Text
         Dim strClearingInOut As String = cmbClearingInOut.SelectedValue
         Dim strAuthorityNum As String = txtAuthNum.Text
-        Dim strDateTime As String = dtpReturnDate.Text
+        Dim strDateTime As String = dtpReturnDate.Text 'object if problem
         Dim strUnitVisiting As String = txtUnitVisiting.Text
+
+
 
     End Sub
 End Class
