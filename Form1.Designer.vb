@@ -194,6 +194,7 @@ Partial Class Form1
         ' 
         ' btnSubmit
         ' 
+        btnSubmit.Anchor = AnchorStyles.Top
         btnSubmit.Location = New Point(339, 377)
         btnSubmit.Name = "btnSubmit"
         btnSubmit.Size = New Size(112, 26)
@@ -250,8 +251,10 @@ Partial Class Form1
         Controls.Add(lblRank)
         Controls.Add(lblForceNum)
         Controls.Add(txtForceNum)
+        MaximizeBox = False
         Name = "Form1"
         Text = "Clearing In Out"
+        TransparencyKey = SystemColors.ControlDark
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
