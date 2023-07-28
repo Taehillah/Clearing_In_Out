@@ -258,7 +258,7 @@ Partial Class Form1
         Controls.Add(lblRank)
         Controls.Add(lblForceNum)
         Controls.Add(txtForceNum)
-        MaximizeBox = False
+        MdiChildrenMinimizedAnchorBottom = False
         Name = "Form1"
         Text = "Clearing In Out"
         TransparencyKey = SystemColors.ControlDark

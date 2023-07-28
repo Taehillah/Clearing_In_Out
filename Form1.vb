@@ -28,7 +28,7 @@ Public Class Form1
         Dim strName As String = txtName.Text.Trim()
         Dim strRank As String = cmbRank.SelectedItem 'if problems the type Object then toString()
         Dim strHomeUnit As String = txtHomeUnit.Text.Trim()
-        Dim strClearingInOut As Object = cmbClearingInOut.SelectedValue
+        Dim strClearingInOut As Object = cmbClearingInOut.SelectedItem
         Dim strAuthorityNum As String = txtAuthNum.Text.Trim()
         Dim strDateTime As String = dtpReturnDate.Text.Trim() 'object if problem
         Dim strUnitVisiting As String = txtUnitVisiting.Text.Trim()
@@ -43,8 +43,8 @@ Public Class Form1
 
 
         Try
-                ' Create or append to the text file and write the data
-                Using writer As New StreamWriter(filePath, True)
+            ' Create or append to the text file and write the data
+            Using writer As New StreamWriter(filePath, True)
                 writer.WriteLine("Force Number: " & strForceNum)
                 writer.WriteLine("Name: " & strName)
                 writer.WriteLine("Rank: " & strRank)
@@ -54,10 +54,10 @@ Public Class Form1
                 writer.WriteLine("Date: " & strDateTime)
                 writer.WriteLine("Unit (Visiting): " & strUnitVisiting)
                 writer.WriteLine("----------") ' Separating line between entries
-                End Using
+            End Using
 
-                ' Display a success message to the user
-                MessageBox.Show("Data has been exported to " & filePath)
+            ' Display a success message to the user
+            MessageBox.Show("Data has been exported to " & filePath)
 
             ' Clear the input fields after exporting the data
             txtForceNum.Text = ""
@@ -70,9 +70,9 @@ Public Class Form1
             txtUnitVisiting.Text = ""
 
         Catch ex As Exception
-                ' Handle any exceptions that may occur during writing to the file
-                MessageBox.Show("Error exporting data: " & ex.Message)
-            End Try
+            ' Handle any exceptions that may occur during writing to the file
+            MessageBox.Show("Error exporting data: " & ex.Message)
+        End Try
 
     End Sub
 End Class
