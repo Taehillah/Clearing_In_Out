@@ -50,7 +50,7 @@ Partial Class Form1
         ' 
         ' txtForceNum
         ' 
-        txtForceNum.Location = New Point(141, 176)
+        txtForceNum.Location = New Point(154, 176)
         txtForceNum.Name = "txtForceNum"
         txtForceNum.Size = New Size(176, 23)
         txtForceNum.TabIndex = 0
@@ -77,7 +77,7 @@ Partial Class Form1
         ' 
         cmbRank.FormattingEnabled = True
         cmbRank.Items.AddRange(New Object() {"Pte", "L/Cpl ", "Cpl ", "Sgt ", "S/Sgt", "WO2", "WO1", "SWO", "MWO", "CWO", "SCWO", "MCWO", "Chaplain", "CO", "2Lt ", "Lt ", "Capt", "Maj", "Lt Col", "Col", "Brig Gen", "Maj Gen", "Lt Gen", "Gen"})
-        cmbRank.Location = New Point(141, 218)
+        cmbRank.Location = New Point(154, 218)
         cmbRank.Name = "cmbRank"
         cmbRank.Size = New Size(176, 23)
         cmbRank.TabIndex = 3
@@ -94,7 +94,7 @@ Partial Class Form1
         ' 
         ' txtName
         ' 
-        txtName.Location = New Point(141, 260)
+        txtName.Location = New Point(154, 260)
         txtName.Name = "txtName"
         txtName.Size = New Size(176, 23)
         txtName.TabIndex = 5
@@ -110,14 +110,14 @@ Partial Class Form1
         ' 
         ' txtHomeUnit
         ' 
-        txtHomeUnit.Location = New Point(141, 302)
+        txtHomeUnit.Location = New Point(154, 302)
         txtHomeUnit.Name = "txtHomeUnit"
         txtHomeUnit.Size = New Size(176, 23)
         txtHomeUnit.TabIndex = 7
         ' 
         ' txtAuthNum
         ' 
-        txtAuthNum.Location = New Point(524, 218)
+        txtAuthNum.Location = New Point(539, 218)
         txtAuthNum.Name = "txtAuthNum"
         txtAuthNum.Size = New Size(176, 23)
         txtAuthNum.TabIndex = 8
@@ -134,7 +134,7 @@ Partial Class Form1
         ' cmbClearingInOut
         ' 
         cmbClearingInOut.FormattingEnabled = True
-        cmbClearingInOut.Location = New Point(524, 176)
+        cmbClearingInOut.Location = New Point(539, 176)
         cmbClearingInOut.Name = "cmbClearingInOut"
         cmbClearingInOut.Size = New Size(176, 23)
         cmbClearingInOut.TabIndex = 10
@@ -162,7 +162,7 @@ Partial Class Form1
         ' 
         dtpReturnDate.AllowDrop = True
         dtpReturnDate.Format = DateTimePickerFormat.Short
-        dtpReturnDate.Location = New Point(524, 262)
+        dtpReturnDate.Location = New Point(539, 262)
         dtpReturnDate.Name = "dtpReturnDate"
         dtpReturnDate.Size = New Size(176, 23)
         dtpReturnDate.TabIndex = 14
@@ -180,7 +180,7 @@ Partial Class Form1
         ' 
         ' txtUnitVisiting
         ' 
-        txtUnitVisiting.Location = New Point(524, 302)
+        txtUnitVisiting.Location = New Point(539, 302)
         txtUnitVisiting.Name = "txtUnitVisiting"
         txtUnitVisiting.Size = New Size(176, 23)
         txtUnitVisiting.TabIndex = 16
@@ -258,7 +258,6 @@ Partial Class Form1
         Controls.Add(lblRank)
         Controls.Add(lblForceNum)
         Controls.Add(txtForceNum)
-        MdiChildrenMinimizedAnchorBottom = False
         Name = "Form1"
         Text = "Clearing In Out"
         TransparencyKey = SystemColors.ControlDark
