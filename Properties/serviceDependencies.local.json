@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "type": "secrets.user"
+    },
+    "mssql1": {
+      "secretStore": "LocalSecretsFile",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/clearing-in-outdbserver/databases/Clearing_In_Out_db",
+      "type": "mssql.azure",
+      "connectionId": "clearingInOutData",
+      "dynamicId": null
+    }
+  }
+}
