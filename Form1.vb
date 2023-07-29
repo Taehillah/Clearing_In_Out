@@ -57,8 +57,8 @@ Public Class Form1
 
                 Using cmd As New SqlCommand(sqlInsertQuery, connection)
                     cmd.Parameters.AddWithValue("@ForceNumber", strForceNum)
-                    cmd.Parameters.AddWithValue("@Name", strName)
                     cmd.Parameters.AddWithValue("@Rank", strRank)
+                    cmd.Parameters.AddWithValue("@Name", strName)
                     cmd.Parameters.AddWithValue("@HomeUnit", strHomeUnit)
                     cmd.Parameters.AddWithValue("@Clearing", strClearingInOut)
                     cmd.Parameters.AddWithValue("@AuthorityNumber", strAuthorityNum)
