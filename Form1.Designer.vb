@@ -44,7 +44,7 @@ Partial Class Form1
         lblBrigadeName1 = New Label()
         Label2 = New Label()
         FileSystemWatcher1 = New IO.FileSystemWatcher()
-        CheckedListBox1 = New CheckedListBox()
+        ClbClearingSections = New CheckedListBox()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(FileSystemWatcher1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -172,7 +172,7 @@ Partial Class Form1
         ' 
         PictureBox1.Anchor = AnchorStyles.Top
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(513, 44)
+        PictureBox1.Location = New Point(515, 44)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(74, 69)
         PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
@@ -198,7 +198,7 @@ Partial Class Form1
         ' btnSubmit
         ' 
         btnSubmit.Anchor = AnchorStyles.Top
-        btnSubmit.Location = New Point(513, 577)
+        btnSubmit.Location = New Point(515, 577)
         btnSubmit.Name = "btnSubmit"
         btnSubmit.Size = New Size(112, 26)
         btnSubmit.TabIndex = 18
@@ -210,7 +210,7 @@ Partial Class Form1
         lblBrigadeName1.Anchor = AnchorStyles.Top
         lblBrigadeName1.AutoSize = True
         lblBrigadeName1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        lblBrigadeName1.Location = New Point(468, 20)
+        lblBrigadeName1.Location = New Point(470, 20)
         lblBrigadeName1.Name = "lblBrigadeName1"
         lblBrigadeName1.Size = New Size(152, 21)
         lblBrigadeName1.TabIndex = 19
@@ -222,7 +222,7 @@ Partial Class Form1
         Label2.Anchor = AnchorStyles.Top
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Label2.Location = New Point(476, 125)
+        Label2.Location = New Point(478, 125)
         Label2.Name = "Label2"
         Label2.Size = New Size(144, 17)
         Label2.TabIndex = 20
@@ -234,20 +234,22 @@ Partial Class Form1
         FileSystemWatcher1.EnableRaisingEvents = True
         FileSystemWatcher1.SynchronizingObject = Me
         ' 
-        ' CheckedListBox1
+        ' ClbClearingSections
         ' 
-        CheckedListBox1.FormattingEnabled = True
-        CheckedListBox1.Location = New Point(409, 362)
-        CheckedListBox1.Name = "CheckedListBox1"
-        CheckedListBox1.Size = New Size(306, 148)
-        CheckedListBox1.TabIndex = 21
+        ClbClearingSections.FormattingEnabled = True
+        ClbClearingSections.Items.AddRange(New Object() {"RSM", "Adjudant", "Regimental Fund", "OPCOM", "OPSEC", "HR (BS1)", "Signal (Internal)", "Finance", "CMI", "QM", "Transport", "OC (HQ Unit)", "GOC Sec", "HR (HQ Unit)"})
+        ClbClearingSections.Location = New Point(409, 362)
+        ClbClearingSections.MultiColumn = True
+        ClbClearingSections.Name = "ClbClearingSections"
+        ClbClearingSections.Size = New Size(377, 94)
+        ClbClearingSections.TabIndex = 21
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1125, 705)
-        Controls.Add(CheckedListBox1)
+        ClientSize = New Size(1128, 620)
+        Controls.Add(ClbClearingSections)
         Controls.Add(Label2)
         Controls.Add(lblBrigadeName1)
         Controls.Add(btnSubmit)
@@ -299,5 +301,5 @@ Partial Class Form1
     Friend WithEvents lblBrigadeName1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents FileSystemWatcher1 As IO.FileSystemWatcher
-    Friend WithEvents CheckedListBox1 As CheckedListBox
+    Friend WithEvents ClbClearingSections As CheckedListBox
 End Class
