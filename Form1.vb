@@ -46,7 +46,46 @@ Public Class Form1
         Dim documentsFolder As String = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)
         Dim filePath As String = Path.Combine(documentsFolder, "data.txt")
 
+        Try
+            ' Connect to the database
+            Using connection As New SqlConnection(connectionString)
+                connection.Open()
 
+                ' Execute an SQL command to insert the data into the database
+                Dim sqlInsertQuery As String = "INSERT INTO YourTableName (ForceNumber, Name, Rank, HomeUnit, Clearing, AuthorityNumber, Date, UnitVisiting) " &
+                                               "VALUES (@ForceNumber, @Name, @Rank, @HomeUnit, @Clearing, @AuthorityNumber, @Date, @UnitVisiting)"
+
+                Using cmd As New SqlCommand(sqlInsertQuery, connection)
+                    cmd.Parameters.AddWithValue("@ForceNumber", strForceNum)
+                    cmd.Parameters.AddWithValue("@Name", strName)
+                    cmd.Parameters.AddWithValue("@Rank", strRank)
+                    cmd.Parameters.AddWithValue("@HomeUnit", strHomeUnit)
+                    cmd.Parameters.AddWithValue("@Clearing", strClearingInOut)
+                    cmd.Parameters.AddWithValue("@AuthorityNumber", strAuthorityNum)
+                    cmd.Parameters.AddWithValue("@Date", strDateTime)
+                    cmd.Parameters.AddWithValue("@UnitVisiting", strUnitVisiting)
+
+                    cmd.ExecuteNonQuery()
+                End Using
+            End Using
+
+            ' Display a success message to the user
+            MessageBox.Show("Data has been exported to the database.")
+
+            ' Clear the input fields after exporting the data
+            txtForceNum.Text = ""
+            txtName.Text = ""
+            cmbRank.SelectedValue = Nothing
+            txtHomeUnit.Text = ""
+            cmbClearingInOut.SelectedValue = Nothing
+            txtAuthNum.Text = ""
+            dtpReturnDate.Text = ""
+            txtUnitVisiting.Text = ""
+
+        Catch ex As Exception
+            ' Handle any exceptions that may occur during database operations
+            MessageBox.Show("Error exporting data: " & ex.Message)
+        End Try
 
         Try
             ' Create or append to the text file and write the data
