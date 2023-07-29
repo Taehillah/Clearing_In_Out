@@ -51,7 +51,7 @@ Partial Class Form1
         ' 
         ' txtForceNum
         ' 
-        txtForceNum.Location = New Point(336, 175)
+        txtForceNum.Location = New Point(318, 177)
         txtForceNum.Name = "txtForceNum"
         txtForceNum.Size = New Size(176, 23)
         txtForceNum.TabIndex = 0
@@ -59,7 +59,7 @@ Partial Class Form1
         ' lblForceNum
         ' 
         lblForceNum.AutoSize = True
-        lblForceNum.Location = New Point(228, 183)
+        lblForceNum.Location = New Point(210, 185)
         lblForceNum.Name = "lblForceNum"
         lblForceNum.Size = New Size(86, 15)
         lblForceNum.TabIndex = 1
@@ -68,7 +68,7 @@ Partial Class Form1
         ' lblRank
         ' 
         lblRank.AutoSize = True
-        lblRank.Location = New Point(228, 225)
+        lblRank.Location = New Point(210, 227)
         lblRank.Name = "lblRank"
         lblRank.Size = New Size(36, 15)
         lblRank.TabIndex = 2
@@ -78,7 +78,7 @@ Partial Class Form1
         ' 
         cmbRank.FormattingEnabled = True
         cmbRank.Items.AddRange(New Object() {"Pte", "L/Cpl ", "Cpl ", "Sgt ", "S/Sgt", "WO2", "WO1", "SWO", "MWO", "CWO", "SCWO", "MCWO", "Chaplain", "CO", "2Lt ", "Lt ", "Capt", "Maj", "Lt Col", "Col", "Brig Gen", "Maj Gen", "Lt Gen", "Gen"})
-        cmbRank.Location = New Point(336, 217)
+        cmbRank.Location = New Point(318, 219)
         cmbRank.Name = "cmbRank"
         cmbRank.Size = New Size(176, 23)
         cmbRank.TabIndex = 3
@@ -87,7 +87,7 @@ Partial Class Form1
         ' lblName
         ' 
         lblName.AutoSize = True
-        lblName.Location = New Point(228, 267)
+        lblName.Location = New Point(210, 269)
         lblName.Name = "lblName"
         lblName.Size = New Size(69, 15)
         lblName.TabIndex = 4
@@ -95,7 +95,7 @@ Partial Class Form1
         ' 
         ' txtName
         ' 
-        txtName.Location = New Point(336, 259)
+        txtName.Location = New Point(318, 261)
         txtName.Name = "txtName"
         txtName.Size = New Size(176, 23)
         txtName.TabIndex = 5
@@ -103,7 +103,7 @@ Partial Class Form1
         ' lblHomeUnit
         ' 
         lblHomeUnit.AutoSize = True
-        lblHomeUnit.Location = New Point(228, 309)
+        lblHomeUnit.Location = New Point(210, 311)
         lblHomeUnit.Name = "lblHomeUnit"
         lblHomeUnit.Size = New Size(73, 15)
         lblHomeUnit.TabIndex = 6
@@ -111,14 +111,14 @@ Partial Class Form1
         ' 
         ' txtHomeUnit
         ' 
-        txtHomeUnit.Location = New Point(336, 301)
+        txtHomeUnit.Location = New Point(318, 303)
         txtHomeUnit.Name = "txtHomeUnit"
         txtHomeUnit.Size = New Size(176, 23)
         txtHomeUnit.TabIndex = 7
         ' 
         ' txtAuthNum
         ' 
-        txtAuthNum.Location = New Point(721, 217)
+        txtAuthNum.Location = New Point(779, 219)
         txtAuthNum.Name = "txtAuthNum"
         txtAuthNum.Size = New Size(176, 23)
         txtAuthNum.TabIndex = 8
@@ -126,7 +126,7 @@ Partial Class Form1
         ' lblAuthNum
         ' 
         lblAuthNum.AutoSize = True
-        lblAuthNum.Location = New Point(611, 225)
+        lblAuthNum.Location = New Point(669, 227)
         lblAuthNum.Name = "lblAuthNum"
         lblAuthNum.Size = New Size(79, 15)
         lblAuthNum.TabIndex = 9
@@ -135,7 +135,7 @@ Partial Class Form1
         ' cmbClearingInOut
         ' 
         cmbClearingInOut.FormattingEnabled = True
-        cmbClearingInOut.Location = New Point(721, 175)
+        cmbClearingInOut.Location = New Point(779, 177)
         cmbClearingInOut.Name = "cmbClearingInOut"
         cmbClearingInOut.Size = New Size(176, 23)
         cmbClearingInOut.TabIndex = 10
@@ -144,7 +144,7 @@ Partial Class Form1
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(611, 183)
+        Label1.Location = New Point(669, 185)
         Label1.Name = "Label1"
         Label1.Size = New Size(92, 15)
         Label1.TabIndex = 11
@@ -153,7 +153,7 @@ Partial Class Form1
         ' lblReturnDate
         ' 
         lblReturnDate.AutoSize = True
-        lblReturnDate.Location = New Point(611, 267)
+        lblReturnDate.Location = New Point(669, 269)
         lblReturnDate.Name = "lblReturnDate"
         lblReturnDate.Size = New Size(77, 15)
         lblReturnDate.TabIndex = 12
@@ -163,7 +163,7 @@ Partial Class Form1
         ' 
         dtpReturnDate.AllowDrop = True
         dtpReturnDate.Format = DateTimePickerFormat.Short
-        dtpReturnDate.Location = New Point(721, 261)
+        dtpReturnDate.Location = New Point(779, 263)
         dtpReturnDate.Name = "dtpReturnDate"
         dtpReturnDate.Size = New Size(176, 23)
         dtpReturnDate.TabIndex = 14
@@ -181,7 +181,7 @@ Partial Class Form1
         ' 
         ' txtUnitVisiting
         ' 
-        txtUnitVisiting.Location = New Point(721, 301)
+        txtUnitVisiting.Location = New Point(779, 303)
         txtUnitVisiting.Name = "txtUnitVisiting"
         txtUnitVisiting.Size = New Size(176, 23)
         txtUnitVisiting.TabIndex = 16
@@ -189,7 +189,7 @@ Partial Class Form1
         ' lblUnitVisiting
         ' 
         lblUnitVisiting.AutoSize = True
-        lblUnitVisiting.Location = New Point(611, 309)
+        lblUnitVisiting.Location = New Point(669, 311)
         lblUnitVisiting.Name = "lblUnitVisiting"
         lblUnitVisiting.Size = New Size(79, 15)
         lblUnitVisiting.TabIndex = 17
@@ -237,11 +237,11 @@ Partial Class Form1
         ' ClbClearingSections
         ' 
         ClbClearingSections.FormattingEnabled = True
-        ClbClearingSections.Items.AddRange(New Object() {"RSM", "Adjudant", "Regimental Fund", "OPCOM", "OPSEC", "HR (BS1)", "Signal (Internal)", "Finance", "CMI", "QM", "Transport", "OC (HQ Unit)", "GOC Sec", "HR (HQ Unit)"})
-        ClbClearingSections.Location = New Point(409, 362)
+        ClbClearingSections.Items.AddRange(New Object() {"RSM", "Adjudant", "Regimental Fund", "Counter Int", "Mess", "OPCOM", "OPSEC", "HR (BS1)", "Signal (Internal)", "Finance", "CMI", "QM", "Transport", "OC (HQ Unit)", "GOC Sec", "HR (HQ Unit)"})
+        ClbClearingSections.Location = New Point(348, 363)
         ClbClearingSections.MultiColumn = True
         ClbClearingSections.Name = "ClbClearingSections"
-        ClbClearingSections.Size = New Size(377, 94)
+        ClbClearingSections.Size = New Size(468, 94)
         ClbClearingSections.TabIndex = 21
         ' 
         ' Form1
