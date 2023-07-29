@@ -198,7 +198,7 @@ Partial Class Form1
         ' btnSubmit
         ' 
         btnSubmit.Anchor = AnchorStyles.Top
-        btnSubmit.Location = New Point(513, 570)
+        btnSubmit.Location = New Point(513, 577)
         btnSubmit.Name = "btnSubmit"
         btnSubmit.Size = New Size(112, 26)
         btnSubmit.TabIndex = 18
