@@ -45,6 +45,7 @@ Partial Class Form1
         Label2 = New Label()
         FileSystemWatcher1 = New IO.FileSystemWatcher()
         ClbClearingSections = New CheckedListBox()
+        lblClearingSections = New Label()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(FileSystemWatcher1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -254,21 +255,33 @@ Partial Class Form1
         ' 
         ClbClearingSections.Anchor = AnchorStyles.None
         ClbClearingSections.BackColor = SystemColors.Menu
-        ClbClearingSections.BorderStyle = BorderStyle.None
+        ClbClearingSections.BorderStyle = BorderStyle.FixedSingle
         ClbClearingSections.FormattingEnabled = True
         ClbClearingSections.ImeMode = ImeMode.Disable
-        ClbClearingSections.Items.AddRange(New Object() {"RSM", "Adjudant", "Regimental Fund", "Counter Int", "Mess", "OPCOM", "OPSEC", "HR (BS1)", "Signal (Internal)", "Finance", "CMI", "QM", "Transport", "OC (HQ Unit)", "GOC Sec", "HR (HQ Unit)"})
-        ClbClearingSections.Location = New Point(330, 403)
+        ClbClearingSections.IntegralHeight = False
+        ClbClearingSections.Items.AddRange(New Object() {"RSM", "Adjudant", "Regimental Fund", "Mess", "Conter Int", "OPCOM", "OPSEC", "HR (BS1)", "Signal (Internal)", "Finance", "CMI", "QM", "Transport", "OC (HQ Unit)", "GOC Sec", "HR (HQ Unit)"})
+        ClbClearingSections.Location = New Point(398, 403)
         ClbClearingSections.MultiColumn = True
         ClbClearingSections.Name = "ClbClearingSections"
-        ClbClearingSections.Size = New Size(468, 90)
+        ClbClearingSections.Size = New Size(606, 79)
         ClbClearingSections.TabIndex = 21
+        ' 
+        ' lblClearingSections
+        ' 
+        lblClearingSections.Anchor = AnchorStyles.None
+        lblClearingSections.AutoSize = True
+        lblClearingSections.Location = New Point(444, 365)
+        lblClearingSections.Name = "lblClearingSections"
+        lblClearingSections.Size = New Size(289, 15)
+        lblClearingSections.TabIndex = 22
+        lblClearingSections.Text = "Clearing Sections (Check/Uncheck the relevant ones):"
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1128, 620)
+        Controls.Add(lblClearingSections)
         Controls.Add(ClbClearingSections)
         Controls.Add(Label2)
         Controls.Add(lblBrigadeName1)
@@ -322,4 +335,5 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents FileSystemWatcher1 As IO.FileSystemWatcher
     Friend WithEvents ClbClearingSections As CheckedListBox
+    Friend WithEvents lblClearingSections As Label
 End Class
