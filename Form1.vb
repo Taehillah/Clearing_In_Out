@@ -52,8 +52,8 @@ Public Class Form1
                 connection.Open()
 
                 ' Execute an SQL command to insert the data into the database
-                Dim sqlInsertQuery As String = "INSERT INTO dbo.FORM1 (ForceNum, Name, Rank, HomeUnit, Clearing, AuthorityNumber, Date, UnitVisiting) " &
-                                               "VALUES (@ForceNumber, @Name, @Rank, @HomeUnit, @Clearing, @AuthorityNumber, @Date, @UnitVisiting)"
+                Dim sqlInsertQuery As String = "INSERT INTO dbo.FORM1 (ForceNum, Ranks, FullNames, HomeUnit, ClearingInOut, Authority, ReturnDate, UnitVisiting) " &
+                                               "VALUES (@ForceNumber, @Rank, @Name, @HomeUnit, @Clearing, @AuthorityNumber, @Date, @UnitVisiting)"
 
                 Using cmd As New SqlCommand(sqlInsertQuery, connection)
                     cmd.Parameters.AddWithValue("@ForceNumber", strForceNum)
