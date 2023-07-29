@@ -6,12 +6,11 @@ Public Class Form1
     Dim connectionString As String = "Data Source=clearing-in-outdbserver.database.windows.net;Initial Catalog=Clearing_In_Out_db;User ID=Taehillah;Password=Lehlohonolo@01;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
 
 
-
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Added items to the cmbClearingInOut ComboBox
         cmbClearingInOut.Items.Add("In")
         cmbClearingInOut.Items.Add("Out")
-
+        ClbClearingSections.ScrollAlwaysVisible = False
     End Sub
 
     Private Sub cmbClearingInOut_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbClearingInOut.SelectedIndexChanged
@@ -120,5 +119,7 @@ Public Class Form1
         End Try
 
     End Sub
+
+
 End Class
 
