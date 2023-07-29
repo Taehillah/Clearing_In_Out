@@ -72,7 +72,7 @@ Public Class Form1
             ' Display a success message to the user
             MessageBox.Show("Data has been exported to the database.")
 
-            ' Clear the input fields after exporting the data
+            ' Clearing the input fields after exporting the data
             txtForceNum.Text = ""
             txtName.Text = ""
             cmbRank.SelectedValue = Nothing
