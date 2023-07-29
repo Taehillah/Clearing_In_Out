@@ -255,7 +255,7 @@ Partial Class Form1
         ' 
         ClbClearingSections.Anchor = AnchorStyles.None
         ClbClearingSections.BackColor = SystemColors.Menu
-        ClbClearingSections.BorderStyle = BorderStyle.FixedSingle
+        ClbClearingSections.BorderStyle = BorderStyle.None
         ClbClearingSections.FormattingEnabled = True
         ClbClearingSections.ImeMode = ImeMode.Disable
         ClbClearingSections.IntegralHeight = False
