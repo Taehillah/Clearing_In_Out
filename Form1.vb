@@ -37,6 +37,7 @@ Public Class Form1
         Dim strAuthorityNum As String = txtAuthNum.Text.Trim()
         Dim strDateTime As String = dtpReturnDate.Text.Trim() 'object if problem
         Dim strUnitVisiting As String = txtUnitVisiting.Text.Trim()
+        Dim strCheckedSection As String = ClbClearingSections.CheckedItems.ToString()
 
         ' Dim strRankString As String = strRank.ToString()
         '  Dim strClearingInOutString As String = strClearingInOut.ToString()
