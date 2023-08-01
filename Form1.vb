@@ -38,7 +38,17 @@ Public Class Form1
         Dim strAuthorityNum As String = txtAuthNum.Text.Trim()
         Dim strDateTime As String = dtpReturnDate.Text.Trim() 'object if problem
         Dim strUnitVisiting As String = txtUnitVisiting.Text.Trim()
-        Dim strCheckedSections As String = ClbClearingSections.CheckedItems.ToString
+        Dim checkedItems As String = ""
+
+        For Each item In ClbClearingSections.CheckedItems
+            checkedItems &= item.ToString() & ", "
+        Next
+
+        ' Remove the trailing comma and space from the checkedItems string
+        If checkedItems.Length > 2 Then
+            checkedItems = checkedItems.Substring(0, checkedItems.Length - 2)
+        End If
+
 
         ' Dim strRankString As String = strRank.ToString()
         '  Dim strClearingInOutString As String = strClearingInOut.ToString()
@@ -82,7 +92,7 @@ Public Class Form1
             txtAuthNum.Text = ""
             dtpReturnDate.Text = ""
             txtUnitVisiting.Text = ""
-            ClbClearingSections.SelectedValue = Nothing
+
 
 
         Catch ex As Exception
@@ -101,7 +111,8 @@ Public Class Form1
                 writer.WriteLine("Authority Number: " & strAuthorityNum)
                 writer.WriteLine("Date: " & strDateTime)
                 writer.WriteLine("Unit (Visiting): " & strUnitVisiting)
-                writer.WriteLine("Checked Sections: " & strCheckedSections)
+                writer.WriteLine("Checked Sections: " & checkedItems)
+
                 writer.WriteLine("----------") ' Separating line between entries
             End Using
 

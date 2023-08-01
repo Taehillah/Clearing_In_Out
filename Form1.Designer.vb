@@ -263,7 +263,7 @@ Partial Class Form1
         ClbClearingSections.Location = New Point(398, 403)
         ClbClearingSections.MultiColumn = True
         ClbClearingSections.Name = "ClbClearingSections"
-        ClbClearingSections.Size = New Size(606, 79)
+        ClbClearingSections.Size = New Size(483, 79)
         ClbClearingSections.TabIndex = 21
         ' 
         ' lblClearingSections
