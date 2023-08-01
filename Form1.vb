@@ -101,7 +101,7 @@ Public Class Form1
                 writer.WriteLine("Authority Number: " & strAuthorityNum)
                 writer.WriteLine("Date: " & strDateTime)
                 writer.WriteLine("Unit (Visiting): " & strUnitVisiting)
-                writer.WriteLine("Checked Sections)= " & strCheckedSections)
+                writer.WriteLine("Checked Sections: " & strCheckedSections)
                 writer.WriteLine("----------") ' Separating line between entries
             End Using
 
