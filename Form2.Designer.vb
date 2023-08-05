@@ -23,31 +23,45 @@ Partial Class Form2
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         dtvResponse = New DataGridView()
+        lblSectionsApprovalStatus = New Label()
         CType(dtvResponse, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' dtvResponse
         ' 
-        dtvResponse.Anchor = AnchorStyles.None
         dtvResponse.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dtvResponse.GridColor = SystemColors.ControlLight
         dtvResponse.Location = New Point(168, 119)
         dtvResponse.Name = "dtvResponse"
         dtvResponse.RowTemplate.Height = 25
-        dtvResponse.Size = New Size(435, 266)
+        dtvResponse.Size = New Size(476, 266)
         dtvResponse.TabIndex = 0
+        ' 
+        ' lblSectionsApprovalStatus
+        ' 
+        lblSectionsApprovalStatus.Anchor = AnchorStyles.Top
+        lblSectionsApprovalStatus.AutoSize = True
+        lblSectionsApprovalStatus.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        lblSectionsApprovalStatus.Location = New Point(318, 67)
+        lblSectionsApprovalStatus.Name = "lblSectionsApprovalStatus"
+        lblSectionsApprovalStatus.Size = New Size(192, 21)
+        lblSectionsApprovalStatus.TabIndex = 1
+        lblSectionsApprovalStatus.Text = "Sections Approval Status"
         ' 
         ' Form2
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(lblSectionsApprovalStatus)
         Controls.Add(dtvResponse)
         Name = "Form2"
         Text = "Form2"
         CType(dtvResponse, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents dtvResponse As DataGridView
+    Friend WithEvents lblSectionsApprovalStatus As Label
 End Class
