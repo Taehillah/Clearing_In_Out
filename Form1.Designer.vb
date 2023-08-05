@@ -259,7 +259,7 @@ Partial Class Form1
         ClbClearingSections.FormattingEnabled = True
         ClbClearingSections.ImeMode = ImeMode.Disable
         ClbClearingSections.IntegralHeight = False
-        ClbClearingSections.Items.AddRange(New Object() {"RSM", "Adjudant", "Regimental Fund", "Mess", "Conter Int", "OPCOM", "OPSEC", "HR (BS1)", "Signal (Internal)", "Finance", "CMI", "QM", "Transport", "OC (HQ Unit)", "GOC Sec", "HR (HQ Unit)"})
+        ClbClearingSections.Items.AddRange(New Object() {"RSM *", "Adjudant *", "Regimental Fund *", "Mess", "Conter Int", "OPCOM *", "OPSEC", "HR (BS1) *", "Signal (Internal)", "Finance", "CMI", "QM", "Transport", "OC (HQ Unit) *", "GOC Sec *", "HR (HQ Unit) "})
         ClbClearingSections.Location = New Point(398, 403)
         ClbClearingSections.MultiColumn = True
         ClbClearingSections.Name = "ClbClearingSections"
