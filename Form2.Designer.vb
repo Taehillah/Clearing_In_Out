@@ -31,7 +31,7 @@ Partial Class Form2
         dtvResponse.Anchor = AnchorStyles.None
         dtvResponse.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dtvResponse.GridColor = SystemColors.ControlLight
-        dtvResponse.Location = New Point(166, 85)
+        dtvResponse.Location = New Point(168, 119)
         dtvResponse.Name = "dtvResponse"
         dtvResponse.RowTemplate.Height = 25
         dtvResponse.Size = New Size(435, 266)
